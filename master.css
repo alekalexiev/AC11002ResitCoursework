@@ -14,7 +14,13 @@
   font-size: 14px;
 }
 
-/* Changes the color of the links in the navbar when they're hovered over */
+/* Changes the color of the links in the navbar to a lighter shade of black when they're hovered over */
 .topnav a:hover {
   background-color: #4d4d4d;
+}
+
+/* Adds a color to the current webpage being visited on the navbar */
+.topnav a.current {
+  background-color: #ffffff;
+  color: #000000;
 }
