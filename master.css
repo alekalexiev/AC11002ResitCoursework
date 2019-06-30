@@ -1,0 +1,26 @@
+/* Makes the navbar black and hides overflow from the text inside the navbar*/
+.topnav {
+  background-color: #000000;
+  overflow: hidden;
+}
+
+/* Makes the containers in the navbar stay on the left side of the page, aligns their text to the centre and colours the text for each link to be a lighter shade of black */
+.topnav a {
+  float: left;
+  color: #d9d9d9;
+  text-align: center;
+  padding: 13px 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Changes the color of the links in the navbar to a lighter shade of black when they're hovered over */
+.topnav a:hover {
+  background-color: #4d4d4d;
+}
+
+/* Adds a color to the current webpage being visited on the navbar */
+.topnav a.current {
+  background-color: #ffffff;
+  color: #000000;
+}
