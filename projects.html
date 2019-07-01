@@ -2,6 +2,9 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <!-- link to the fontawesome framework for icons-->
+  <script src="https://kit.fontawesome.com/c26919b171.js"></script>
+  <!-- link to the bootstrap framework -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="master.css">
   <link rel="stylesheet" type="text/css" href="projects.css">
@@ -13,10 +16,21 @@
 <body>
 
   <!-- top horizontal navbar to navigate between the website's pages -->
-  <div class="topnav">
+  <div class="topnav" id="myNav">
     <a href="index.html">Home</a>
-    <a class="current" href="projects.html">Projects current</a></li>
-    <a href="contacts.html">Contacts</a></li>
+    <a class="current" href="projects.html">Projects</a>
+    <a href="contacts.html">Contacts</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <!-- the icon from font awesome -->
+      <i class="fas fa-camera"></i>
+    </a>
+  </div>
+
+  <!-- header for the projects page -->
+  <div class="header">
+    <h1>Ricture Perfect Photography's Projects</h1>
+    <p>Here at picture perfect photography we work on many projects
+      as you may see when you scroll down the page</p>
   </div>
 
   <!-- row with 3 columns for a flexibox approach to the gallery -->
@@ -34,10 +48,6 @@
           aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <img src="https://images.pexels.com/photos/208948/pexels-photo-208948.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Orange and Black Bird on a tree by Pixbay">
-      <div class="textbox">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
       <div class="textbox">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
           aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -94,6 +104,18 @@
     </div>
   </div>
 
+  <script>
+    myFunction();
+    /* Opens menu when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myNav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </body>
 
 </html>
