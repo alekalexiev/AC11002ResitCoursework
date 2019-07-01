@@ -1,5 +1,5 @@
 /* Sets the general attributes of each row*/
-.row {
+.rows {
   display: flex;
   flex-wrap: wrap;
   padding: 0 2px;
