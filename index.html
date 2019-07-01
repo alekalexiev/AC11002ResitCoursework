@@ -2,6 +2,9 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <!-- link to the fontawesome framework for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- link to the bootstrap framework -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="master.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,10 +15,13 @@
 <body>
 
   <!-- top horizontal navbar to navigate between the website's pages -->
-  <div class="topnav">
+  <div class="topnav" id="myNav">
     <a class="current" href="index.html">Home current</a>
     <a href="projects.html">Projects</a></li>
-    <a href="contacts.html">Contacts</a></li>
+    <a href="contacts.html">Contacts</a></li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <!-- the icon from font awesome -->
+      <i class="fas fa-camera"></i>
+    </a>
   </div>
 
   <!-- carousel class that contains image slideshow to showcase projects it will shuffle through 7 slides-->
@@ -26,7 +32,7 @@
     </div>
 
     <div class="mySlides">
-      <img src="https://images.pexels.com/photos/1644794/pexels-photo-1644794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="The Long Road by Simon Migaj"style="width:100%">
+      <img src="https://images.pexels.com/photos/1644794/pexels-photo-1644794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="The Long Road by Simon Migaj" style="width:100%">
     </div>
 
     <div class="mySlides">
