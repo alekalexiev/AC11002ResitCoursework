@@ -1,0 +1,6 @@
+/* Sets the general attributes of each row*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: none;
+}
