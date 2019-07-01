@@ -40,3 +40,12 @@
     max-width: 50%;
   }
 }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other when the screen size is below 576px */
+@media screen and (max-width: 576px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
