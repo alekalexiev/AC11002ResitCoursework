@@ -1,0 +1,58 @@
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* The carousel of images itself*/
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* the text that will display on each image */
+.text {
+  color: #d9d9d9;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots indicating which photo in the carousel is being viewed*/
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #262626;
+}
+
+/* Fading animations for the dots and the images*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.0s;
+  animation-name: fade;
+  animation-duration: 2.0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
