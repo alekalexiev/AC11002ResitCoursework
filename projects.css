@@ -31,3 +31,21 @@
   text-align: center;
   padding: 32px;
 }
+
+/* Responsive layout - makes a two column-layout instead of a three column one when the sctreen size is below 768px */
+@media screen and (max-width: 768px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other when the screen size is below 576px */
+@media screen and (max-width: 576px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
