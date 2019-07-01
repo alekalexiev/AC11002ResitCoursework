@@ -30,12 +30,6 @@ body {
   margin: 0;
 }
 
-.header {
-  color: #d9d9d9;
-  text-align: center;
-  padding: 32px;
-}
-
 /* Hides the link for phone screens on bigger ones */
 .topnav .icon {
   display: none;
