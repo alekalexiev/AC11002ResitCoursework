@@ -25,50 +25,42 @@
     </a>
   </div>
 
-  <!-- carousel class that contains image slideshow to showcase projects it will shuffle through 7 slides-->
-  <div class="slideshow-container">
-    <!-- Each seperate div is a slide in the slideshow that will be randomly flipped through ysung java script -->
-    <div class="mySlides">
-      <img src="https://images.pexels.com/photos/1552212/pexels-photo-1552212.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Green Trees by James Wheeler" style="width:100%">
-    </div>
+  <div class="container">
+    <!-- carousel class that contains image slideshow to showcase projects it will shuffle through 7 slides-->
+    <div class="slideshow-container">
+      <!-- Each seperate div is a slide in the slideshow that will be randomly flipped through ysung java script -->
+      <div class="mySlides">
+        <img src="https://images.pexels.com/photos/1552212/pexels-photo-1552212.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Green Trees by James Wheeler" style="width:100%">
+      </div>
 
-    <div class="mySlides">
-      <img src="https://images.pexels.com/photos/1644794/pexels-photo-1644794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="The Long Road by Simon Migaj" style="width:100%">
-    </div>
+      <div class="mySlides">
+        <img src="https://images.pexels.com/photos/1644794/pexels-photo-1644794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="The Long Road by Simon Migaj" style="width:100%">
+      </div>
 
-    <div class="mySlides">
-      <img src="https://images.pexels.com/photos/208948/pexels-photo-208948.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Orange and Black Bird on a tree by Pixbay" style="width:100%">
-    </div>
+      <div class="mySlides">
+        <img src="https://images.pexels.com/photos/208948/pexels-photo-208948.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Orange and Black Bird on a tree by Pixbay" style="width:100%">
+      </div>
 
-    <div class="mySlides">
-      <img src="https://images.pexels.com/photos/1854020/pexels-photo-1854020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Chilling by Lucas França" style="width:100%">
-    </div>
+      <div class="mySlides">
+        <img src="https://images.pexels.com/photos/1854020/pexels-photo-1854020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Chilling by Lucas França" style="width:100%">
+      </div>
 
-    <div class="mySlides">
-      <img src="https://images.pexels.com/photos/1032654/pexels-photo-1032654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Winter Road by Travis Rupert" style="width:100%">
-    </div>
+      <div class="mySlides">
+        <img src="https://images.pexels.com/photos/1032654/pexels-photo-1032654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Winter Road by Travis Rupert" style="width:100%">
+      </div>
 
-    <div class="mySlides">
-      <img src="https://images.pexels.com/photos/380287/pexels-photo-380287.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Architecture by Kaique Rocha" style="width:100%">
-    </div>
+      <div class="mySlides">
+        <img src="https://images.pexels.com/photos/380287/pexels-photo-380287.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Architecture by Kaique Rocha" style="width:100%">
+      </div>
 
-    <div class="mySlides">
-      <img src="https://images.pexels.com/photos/2273085/pexels-photo-2273085.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Flowers by Sharon McCutcheon" style="width:100%">
-    </div>
+      <div class="mySlides">
+        <img src="https://images.pexels.com/photos/2273085/pexels-photo-2273085.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Flowers by Sharon McCutcheon" style="width:100%">
+      </div>
 
+    </div>
   </div>
+
   <br>
-
-  <!-- 7 dots to notify the user of their location in the gallery -->
-  <div style="text-align:center">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
 
   <script>
     var slideIndex = 0;
@@ -78,7 +70,6 @@
     function showSlides() {
       var i;
       var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
@@ -86,11 +77,7 @@
       if (slideIndex > slides.length) {
         slideIndex = 1
       }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
       slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
       setTimeout(showSlides, 5000); // Change image every 5 seconds
     }
 

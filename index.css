@@ -21,22 +21,6 @@ img {
   margin: auto;
 }
 
-/* The dots indicating which photo in the carousel is being viewed*/
-.dot {
-  height: 5px;
-  width: 5px;
-  margin: 0 2px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-/* Changes the colour of the currently active dot*/
-.active {
-  background-color: #262626;
-}
-
 /* Fading animations for the dots and the images*/
 .fade {
   -webkit-animation-name: fade;
