@@ -1,3 +1,6 @@
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
 .mySlides {
   display: none
 }
@@ -13,17 +16,6 @@ img {
   margin: auto;
 }
 
-/* the text that will display on each image */
-.text {
-  color: #d9d9d9;
-  font-size: 14px;
-  padding: 10px 14px;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-}
-
 /* The dots indicating which photo in the carousel is being viewed*/
 .dot {
   height: 5px;
@@ -35,6 +27,7 @@ img {
   transition: background-color 0.6s ease;
 }
 
+/* Changes the colour of the currently active dot*/
 .active {
   background-color: #262626;
 }
