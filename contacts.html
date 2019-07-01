@@ -2,6 +2,9 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <!-- link to the fontawesome framework for icons-->
+  <script src="https://kit.fontawesome.com/c26919b171.js"></script>
+  <!-- link to the bootstrap framework -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="master.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,10 +15,14 @@
 <body>
 
   <!-- top horizontal navbar to navigate between the website's pages -->
-  <div class="topnav">
+  <div class="topnav" id="myNav">
     <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a></li>
-    <a class="current" href="contacts.html">Contacts current</a></li>
+    <a href="projects.html">Projects</a>
+    <a class="current" href="contacts.html">Contacts</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <!-- the icon from font awesome -->
+      <i class="fas fa-camera"></i>
+    </a>
   </div>
 
   <!-- row with 3 columns for contacting different photographers of the agency-->
@@ -41,7 +48,7 @@
         <div class="caption">
           <p>Taylor Sheridan</p>
           <p>Email address: taylors@yahoo.com</p>
-          <p>Street: 58  Leicester Road</p>
+          <p>Street: 58 Leicester Road</p>
           <p>City: AULTON</p>
           <p>Zip Code: AB52 6XY</p>
           <p>Phone Number: 078 8024 0151</p>
@@ -55,7 +62,7 @@
         <div class="caption">
           <p>Trey Beech</p>
           <p>Email address: tbeech@hotmail.com</p>
-          <p>Street: 112  Leicester Road</p>
+          <p>Street: 112 Leicester Road</p>
           <p>City: AUTHORPE</p>
           <p>Zip Code: LN11 8GR</p>
           <p>Phone Number: 079 1512 9978</p>
@@ -63,6 +70,19 @@
       </div>
     </div>
   </div>
+
+  <script>
+    myFunction();
+    /* Opens menu when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myNav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 
 </body>
 
