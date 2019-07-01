@@ -1,6 +1,6 @@
 /* Makes the navbar black and hides overflow from the text inside the navbar*/
 .topnav {
-  background-color: #000000;
+  background-color: #262626;
   overflow: hidden;
 }
 
@@ -23,4 +23,9 @@
 .topnav a.current {
   background-color: #ffffff;
   color: #000000;
+}
+
+body {
+  background-color: #262626;
+  margin: 0;
 }
